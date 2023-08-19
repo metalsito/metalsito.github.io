@@ -1,0 +1,211 @@
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url(../Assets/IMG/Banner/img-lenguaje-programacion.jpg);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 0.5px solid black;
+}
+.banner .container-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.banner .container-banner #banner-text {
+  border: 0.5px solid black;
+  padding: 5px;
+  background-color: rgba(197, 197, 197, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.banner .container-banner #banner-text #banner-sub-text {
+  text-align: center;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 0.5px solid black;
+  padding-top: 10px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  max-width: 992px;
+  height: 680px;
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  border-bottom: solid 1px #ddd;
+}
+.about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-container .text-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.about .about-container .text-about .img-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-container .text-about .container-text-header-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.about .about-container .text-about .container-text-header-body .header-about {
+  width: 20rem;
+}
+.about .about-container .text-about .container-text-header-body .header-about .body-about {
+  font-size: medium;
+  margin-top: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  border-bottom: solid 1px #ddd;
+}
+.skills .text-skills {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.skills .text-skills .text-header-skills {
+  margin-top: 3rem;
+  border: 0.5px solid rgb(33, 37, 41);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgb(33, 37, 41);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+.skills .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 22rem;
+}
+.skills .skills-container .img-skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid 1px #ddd;
+}
+.projects .header-text-projects {
+  margin-top: 3rem;
+  border: 0.5px solid rgb(33, 37, 41);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgb(33, 37, 41);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
+.projects .container-cards {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 3rem;
+  grid-auto-rows: 22rem;
+  margin: auto;
+  align-self: center;
+  padding: 1rem;
+}
+.projects .container-cards .container-content-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  max-width: 992px;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.contact .contact-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: solid 1px rgba(8, 8, 8, 0.3490196078);
+}
+.contact .contact-data .email-text {
+  font-size: 1rem;
+}
+.contact .contact-data .whatzapp-icon {
+  margin-right: 0.25rem;
+}
+.contact .contact-data .email-icon {
+  margin-right: 0.25rem;
+}
+.contact .header-text-contact {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: 0.5px solid rgb(33, 37, 41);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgb(33, 37, 41);
+  color: white;
+  border-radius: 5px;
+}
+.contact .container-form {
+  width: 420px;
+}
+.contact .container-form .btn-div .btn {
+  float: right;
+}
+
+.navbar-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-bottom .whatzapp-icon {
+  margin-right: 0.25rem;
+}
+.navbar-bottom .email-icon {
+  margin-right: 0.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

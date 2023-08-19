@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Manuel De Los Santos</title>
+    <!--  link de la hoja de estilos de css-->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <!--  link para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--  link para la fuente oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--  navbar: indica que sera una navigation bar
+    ///// navbar-expand-md: indica que sea responsive y si sigue unas medidas estandares
+    ///// navbar-dark: indica el tema de la navbar
+    ///// bg-dark: indica el color del background
+    ///// sticky-top: indica que la navbar siempre este arriba incluso cuando se hace scroll-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <!--/ container-fluid: indica un contenedor responsive y maleable en el posicionamiento de items-->
+        <div class="container-fluid">
+    <!--/ navbar-brand: Es el titulo o logo para tu proyecto-->
+        <a class="navbar-brand" href="#home-banner">Home</a>
+    <!--/ navbar-toggler: indica que se usara estos elementos en otros que collapsan
+    ///// offcanvas: es una UI que esta fuera de foco y aparece al apretar el boton-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+    <!--/ navbar-toggler-icon: icono de boton de navbar-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <!--/ offcanvas-start: indica en que direccion sale el menu desplegable de la navbar
+    ///// text-bg-dark: el background del texto en negro
+    ///// tabindex -1: indica que el elemento no es focuseable por el tab del teclado pero si por JS-->
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" aria-labelledby="offcanvasDarkNavbarLabel" id="offcanvasDarkNavbar">
+    <!--/ offcanvas-header: seccion del titulo o encabezado del offcanvas-->
+            <div class="offcanvas-header">
+    <!--/ offcanvas-tittle: clase para el texto que va en el offcanvas-header-->
+                <h5 class="offcanvas-tittle" id="offcanvasDarkNavbarLabel"></h5>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+    <!--/ offcanvas-body: cuerpo del offcanvas donde iran la mayoria de elementos o items-->
+            <div class="offcanvas-body">
+    <!--/ navbar-nav: clase para indicar que es una navigation bar
+    ///// justify-content-start: metodos para acomodar el contenido a la izquierda
+    ///// flex-grow-1: indica si un elemento abarcara el espacio libre circundante
+    ///// pe-3: es una clase para agregar o prevenir interacciones a un elemento-->
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+    <!--/ nav-item: le da la clase item de navegacion a un elemento-->
+                    <li class="nav-item">
+    <!--/ nav-link: le da la clase de link a un elemento
+    ///// active: le dice si esta habilitado ese elemento como link-->
+    <!--/ href: con la # mas el id nos lleva a esa seccion de la pagina web-->
+                        <a class="nav-link active" href="#about-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skills-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+<!--seccion del banner-->
+    <section class="banner" id="home-banner">
+    <!--  container-fluid: para que sea responsive el container-->
+        <div class="container-fluid container-banner">
+    <!--  texto del banner-->
+            <h1 id="banner-text">Manuel Sebastian De Los Santos
+    <!--  sub texto del banner-->
+                <p id="banner-sub-text">Dev. fulll stack / Video-games dev. / Image editor</p>
+            </h1>
+        </div>
+    </section>
+<!--seccion del about-->
+    <section class="about" id="about-link">
+        <div class="container-fluid about-container">
+            <div class="container-fluid text-about">
+                <div class="container-fluid container-text-header-body">
+                    <h4 class="header-about text-bg-dark rounded-3 p-2">About me
+                        <p class="body-about">
+                            I started in the world of programming obtaining certificates in game development at the UTN in Buenos Aires. Then I started developing apps, web pages, programs in general, etc.
+                            I like learning new things and overcoming challenges.
+                        </p>
+                    </h4>
+                </div>
+                <div class="img-about d-none d-md-block">
+                    <img src="../Assets/IMG/About/img-programador-about.png" alt="img-about" width="500px" height="300px">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--seccion de las skills-->
+    <sectiion class="skills" id="skills-link">
+        <div class="text-skills">
+                <h2 class="text-header-skills">Skills</h2>
+            </div>
+        <div class="container-fluid skills-container">
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-html-logo.png" alt="html-logo" width="200px" height="150px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-css-logo.png" alt="html-logo" width="130px" height="150px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-js-logo.png" alt="html-logo" width="100px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-bootstrap-logo.png" alt="html-logo" width="150px" height="150px">                
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-python-logo.png" alt="html-logo" width="125px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-java-logo.png" alt="html-logo" width="100px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-visual-studio-code-logo.png" alt="html-logo" width="180px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-intellij-logo.png" alt="html-logo" width="125px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-github-logo.png" alt="html-logo" width="150px" height="100px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-nodejs-logo.png" alt="html-logo" width="125px" height="125px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-sass-logo.png" alt="html-logo" width="125px" height="125px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-canva-logo.png" alt="html-logo" width="125px" height="125px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-photoshop-logo.png" alt="html-logo" width="110px" height="110px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-ilustrato-logo.png" alt="html-logo" width="110px" height="110px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-unity-logo.png" alt="html-logo" width="110px" height="110px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-blender-logo.png" alt="html-logo" width="110px" height="110px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-csharp-logo.png" alt="html-logo" width="110px" height="110px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-microsoft-word-logo.png" alt="html-logo" width="120px" height="95px">
+            </div>
+            <div class="container-fluid img-skills-container">
+                <img class="img-lg" src="../Assets/IMG/Logos/img-microsoft-excel-logo.png" alt="html-logo" width="120px" height="95px">
+            </div>
+        </div>
+    </sectiion>
+<!-- seccion de los projects-->
+    <section class="projects" id="projects-link">
+        <div class="header-projects">
+            <h2 class="header-text-projects">Projects</h2>
+        </div>
+        <div class="container-fluid container-cards">
+            <div class="container-fluid py-4 container-content-cards">
+                <div class="card text-bg-dark border-dark" style="width: 15rem;">
+                    <img src="../Assets/IMG/Projects/PortFolio/Portfolio-img-3.jpg" alt="img-portfolio" class="card-img-top">
+                    <div class="card-body">
+                        <h2 class="card-tittle">Portfolio Manuel De Los Santos</h2>
+                        <p class="card-text">This is my web developer, video game and image editor portfolio project.</p>
+                        <a href="https://github.com/metalsito/Portfolio-Manu.git" class="card-link">Link to the Github project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 container-content-cards">
+                <div class="card text-bg-dark border-dark" style="width: 15rem;">
+                    <img src="../Assets/IMG/Projects/Csharp-game/Csharp-game.jpg" alt="img-c#-game" class="card-img-top" style="height: 7.40rem;">
+                    <div class="card-body">
+                        <h2 class="card-tittle">First video game i made</h2>
+                        <p class="card-text">This is my first video game that I made only with visual studio 2017 and C# language.</p>
+                        <a href="https://github.com/metalsito/C-Jueguito.git" class="card-link">Link to the Github project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 container-content-cards">
+                <div class="card text-bg-dark border-dark" style="width: 15rem;">
+                    <img src="../Assets/IMG/Projects/UnityTankOnline/Tankesitos-img.jpg" alt="img-tankesitos" class="card-img-top" style="height: 9rem;">
+                    <div class="card-body">
+                        <h2 class="card-tittle">Online game of tanks</h2>
+                        <p class="card-text">This is my first online game project, made with unity.</p>
+                        <a href="https://github.com/metalsito/Trabajo-final-para-curso-en-redes-4.git" class="card-link">Link to the Github project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 container-content-cards">
+                <div class="card text-bg-dark border-dark" style="width: 15rem;">
+                    <img src="../Assets/IMG/Projects/Porject-modulo1/SpaceConflict-img.jpg" alt="img-portfolio" class="card-img-top" style="height: 10rem;">
+                    <div class="card-body">
+                        <h2 class="card-tittle">SpaceConflict</h2>
+                        <p class="card-text">This is the first video game i made with unity.</p>
+                        <a href="https://github.com/metalsito/Proyecto-1.git" class="card-link">Link to the Github project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid py-4 container-content-cards">
+                <div class="card text-bg-dark border-dark" style="width: 15rem;">
+                    <img src="../Assets/IMG/Projects/UnityChan/UnityChan.jpg" alt="img-portfolio" class="card-img-top" style="height: 8rem;">
+                    <div class="card-body">
+                        <h2 class="card-tittle">UnityChan Adventure</h2>
+                        <p class="card-text">With this game I passed my degree in video game development.</p>
+                        <a href="https://github.com/metalsito/unity-chan-adventure-master.git" class="card-link">Link to the Github project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- seccion del contact-->
+    <section class="contact" id="contact-link">
+    <div class="header-contact">
+        <h2 class="header-text-contact">Contact</h2>
+    </div>
+    <div class="contact-data mb-3">
+        <span><ion-icon class="whatzapp-icon" name="logo-whatsapp"></ion-icon>ARG +54 11-6022-0394</span>
+        <span class="email-text"><ion-icon class="email-icon" name="mail-outline"></ion-icon>MANUELSEBASTIANDLS@GMAIL.COM</span>
+    </div>
+    <form action="https://formsubmit.co/manuelsebastiandls@gmail.com" method="POST" method="posts">
+        <div class="container-fluid container-form">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                <label for="name" class="form-label">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+                <label for="email" class="form-label">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="subject" placeholder="subject" name="subject">
+                <label for="subject" class="form-label">Subject</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a message" id="floatingTextarea" name="message" style="height: 100px;"></textarea>
+                <label for="floatingTextarea">Message</label>
+            </div>
+            <div class="mb-3 btn-div">
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+    </form>
+    </section>
+
+<!-- segundo navbar de contact-->
+    <nav class="navbar navbar-bottom navbar-expand-lg d-none d-lg-block navbar-dark bg-dark sticky-bottom">
+        <div class="container-fluid navbar-container-bottom">
+            <a href="#contact-link" class="navbar-brand">Contact</a>
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <span class="navbar-text nav-link"><ion-icon class="whatzapp-icon" name="logo-whatsapp"></ion-icon>ARG +54 11-6022-0394</span>
+                </li>
+                <li class="nav-item">
+                    <span class="email-text navbar-text nav-link"><ion-icon class="email-icon" name="mail-outline"></ion-icon>MANUELSEBASTIANDLS@GMAIL.COM</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0Zs0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="../js/index.js"></script>
+</html>
