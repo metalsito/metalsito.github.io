@@ -174,10 +174,17 @@
 .contact .contact-data .email-text {
   font-size: 1rem;
 }
+.contact .contact-data .linkedin-text {
+  text-decoration: none;
+  color: black;
+}
 .contact .contact-data .whatzapp-icon {
   margin-right: 0.25rem;
 }
 .contact .contact-data .email-icon {
+  margin-right: 0.25rem;
+}
+.contact .contact-data .linkedin-icon {
   margin-right: 0.25rem;
 }
 .contact .header-text-contact {
@@ -205,6 +212,9 @@
   margin-right: 0.25rem;
 }
 .navbar-bottom .email-icon {
+  margin-right: 0.25rem;
+}
+.navbar-bottom .linkedin-icon {
   margin-right: 0.25rem;
 }
 

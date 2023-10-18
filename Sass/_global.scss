@@ -189,10 +189,17 @@
         .email-text{
             font-size: 1rem;
         }
+        .linkedin-text {
+            text-decoration: none;
+            color: black;
+        }
         .whatzapp-icon {
             margin-right: 0.25rem;  
         }
         .email-icon {
+            margin-right: 0.25rem;
+        }
+        .linkedin-icon {
             margin-right: 0.25rem;
         }
     }
@@ -223,6 +230,9 @@
         margin-right: 0.25rem;  
     }
     .email-icon {
+        margin-right: 0.25rem;
+    }
+    .linkedin-icon {
         margin-right: 0.25rem;
     }
 }
